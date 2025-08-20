@@ -1,1 +1,1 @@
-# bunbougu_ysws
+# bunbougu: a ysws program for hack club
