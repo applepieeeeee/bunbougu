@@ -7,12 +7,16 @@
 
         <link rel = "preconnect" href = "https://fonts.googleapis.com">
         <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-        <link href = "https://fonts.googleapis.com/css2?family=Shizuru&family=Borel&display=swap" rel = "stylesheet">
+        <link href = "https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel = "stylesheet">
+        <link href = "https://fonts.googleapis.com/css2?family=Borel&display=swap" rel = "stylesheet">
+        <link href = "https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel = "stylesheet">
 
+        <!-- css -->
         <style>
             :root{
                 --font1: 'Shizuru', cursive;
                 --font2: 'Borel', serif;
+                --font3: 'Gaegu', cursive;
 
                 --bg-color: #efc8c8;
                 --secondary-color: #c4907d;
@@ -20,15 +24,39 @@
             }
 
             body {
+                background-color: var(--bg-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
+                min-height: 100vh;
+                margin: 0;
+            }
 
+            h1 {
+                font-family: var(--font1);
+                color: var(--text-color);
+                font-size: 12rem;
+            }
+
+            p{
+                font-family: var(--font3);
+                color: var(--text-color);
+                font-size: 1.5rem;
+                margin-top: 0;
+                
+                text-align: center;
+                max-width: 800px;
+                padding: 0 20px;
             }
 
         </style>
 
-    </head>
-    
-    <body>
+    </head> 
 
+    <!-- html -->
+    <body>
+        <h1> bunbougu </h1>
+        <p> a hack club ysws program where you ship a productivity/school related app and we ship you japanese stationery and other school supplies !</p>
     </body>
 </html>
