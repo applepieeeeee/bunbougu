@@ -25,14 +25,8 @@
 
             body {
                 background-color: var(--bg-color);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-
                 min-height: 100vh;
                 margin: 0;
-                overflow: hidden;
                 position: relative;
             }
 
@@ -46,46 +40,53 @@
                 height:100%;
 
                 background-image: url('assets/notebook.png');
-                background-size:cover;
-                background-repeat: norepeat;
+                background-size: contain;
                 background-position: center center;
+                background-repeat: no-repeat;
 
-                transform: rotateZ(-10deg) scale (1.2);
+                transform: rotateZ(-7deg) translateX(200px) translateY(30px);
                 transform-origin: center center;
                 z-index: -1;
             }
-            
+
             .content-wrapper {
+                position: absolute;
+                top: 50px;
+                left: 250px;
+
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
-                transform: rotateZ(-5deg);
+                transform: rotateZ(-7deg);
                 transform-origin: center center;
                 padding: 12px;
                 box-sizing: border-box;
+                max-width: 520px;
             }
 
             h1 {
                 font-family: var(--font1);
                 color: var(--text-color);
-                font-size: 12rem;
+                font-size: 122px;
+                letter-spacing: 0.07em;
                 line-height: 1;
-                margin-bottom: 9rem;
-                transform: rotateZ(-5deg);
+
+                margin-bottom: 10px;
+                transform: rotateZ(-7deg);
             }
 
             p{
                 font-family: var(--font3);
                 color: var(--text-color);
-                font-size: 1.65rem; 
-                margin-top: -4em;
+                font-size: 18px; 
+                margin-top: 120px;
                 
                 text-align: center;
-                max-width: 720px;
+                max-width: 520px;
                 padding: 0 20px;
-                transform: rotateZ(-5deg);
+                transform: rotateZ(-7deg);
             }
 
         </style>
@@ -97,4 +98,5 @@
         <h1> bunbougu </h1>
         <p> a hack club ysws program where you ship a productivity/school related app and we ship you japanese stationery and other school supplies !</p>
     </body>
+    
 </html>
