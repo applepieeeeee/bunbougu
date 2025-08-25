@@ -1,7 +1,7 @@
 # bunbougu: a ysws program for hack club
 learn more on #bunbougu-ysws on slack!
 
-#FAQ
+# FAQ
 ## Who can participate?
 This YSWS is open to anyone 18 and younger! 
 
