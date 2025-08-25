@@ -78,7 +78,7 @@
 
             .submit-button{
                 display: inline-block;
-                background-color: #a7b28e;
+                background-color: var(--button-bg);
                 color: var(--text-color);
 
                 font-family: var(--font2);
@@ -95,11 +95,11 @@
             }
 
             .submit-button:hover{
-                background-color: #92a07a;
+                background-color: #7DAEBA;
                 transform: translateY(-2px);
             }
 
-            .faq section {
+            .faq-section {
                 width: 100%;
                 max-width: 700px;
                 
@@ -108,7 +108,7 @@
                 text-align: center;
             }
 
-            .faq section h2{
+            .faq-section h2{
                 font-family: var(--font1);
                 color: var(--text-color);
                 font-size: 3rem;
@@ -117,7 +117,8 @@
             }
 
             .faq-item{
-                background-color: #d6b68f;
+                background-color: var(--faq-item-bg);
+                border: 1px solid var(--text-color);
                 border-radius: 10px;
 
                 text-align: left;
@@ -128,7 +129,7 @@
 
             .faq-item summary{
                 font-family: var(--font2);
-                font-size: 1.4rem;
+                font-size: 1.45rem;
                 font-weight: bold;
 
                 color: var(--text-color);
@@ -156,7 +157,7 @@
 
             .faq-item p{
                 font-family: var(--font2);
-                font-size: 1rem;
+                font-size: 1.3rem;
                 color: var(--text-color);
 
                 line-height: 1.6;
@@ -179,6 +180,18 @@
                 p {
                     font-size: 1.2rem;
                     padding: 0 10px; 
+                }
+
+                .faq-section h2{
+                    font-size: 2.5rem;
+                }
+
+                .faq-item summar{
+                    font-size: 1.2rem;
+                }
+                
+                .faq-item p{
+                    font-size: 0.9rem;
                 }
             }
     </style>
