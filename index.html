@@ -29,6 +29,8 @@
                 align-items: center;
                 justify-content: center;
                 position: relative;
+
+                overflow-x: hidden;
             }
 
             .content-wrapper {
@@ -36,8 +38,11 @@
                 flex-direction: column; 
                 align-items: center; 
                 justify-content: center; 
+
                 padding: 20px; 
                 max-width: 900px; 
+                width: 100%;
+
                 text-align: center;
                 position: relative;
                 z-index: 1;
@@ -47,8 +52,10 @@
                 font-family: var(--font1);
                 color: var(--text-color);
                 font-size: 122px; 
+
                 letter-spacing: 0.07em;
                 line-height: 1;
+
                 margin: 0 0 10px 0; 
                 padding: 0;
             }
@@ -57,8 +64,10 @@
                 font-family: var(--font2); 
                 color: var(--text-color);
                 font-size: 1.8rem; 
+
                 line-height: 1.2; 
-                margin-top: 2rem; 
+
+                margin-top: 40px; 
                 padding: 0 20px;
                 max-width: 1000px; 
             }
@@ -83,6 +92,62 @@
 
             .submit-button:hover{
                 background-color: #92a07a;
+                transform: translateY(-2px);
+            }
+
+            .faq section {
+                width: 100%;
+                max-width: 700px;
+                
+                margin-top: 30px;
+                padding: 0 20px;
+            }
+
+            .faq section h2{
+                font-family: var(--font1);
+                color: var(--text-color);
+                font-size: 3rem;
+
+                margin-bottom: 30px;
+            }
+
+            .faq-item{
+                background-color: #d5b896;
+                border: 1px solid #00284d;
+                
+                padding: 15px 20px;
+            }  
+
+            .faq-item question{
+                font-family: var(--font2);
+                font-size: 1.4rem;
+                font-weight: bold;
+
+                color: var(--text-color);
+
+                position: relative;
+                list-style: none;
+                outline: none;
+
+                cursor: pointer;
+            }
+
+            .faq-item question::after{
+                content: '▼';
+                position: absolute;
+            }
+
+            .faq-item[open] question::after{
+                transform: translateY(-50%) rotate(180deg);
+            }
+
+            .faq-item p{
+                font-family: var(--font2);
+                font-size: 1rem;
+                color: var(--text-color);
+
+                padding: 0;
+                max-width: none;
             }
 
             @media (max-width: 768px) {
@@ -110,6 +175,19 @@
         <p>a hack club ysws program where you ship a productivity/school related app and we ship you japanese stationery and other school supplies</p>
         <a href="https://forms.fillout.com/t/qs71sxjUtAus" target="_blank" rel="noopener noreferrer" class="submit-button">Submit your Project here!</a>
     </div>
+    
+    <div class = "faq-section">
+        <h2> Frequently Asked Questions </h2>
+
+        <div class = "faq-item">
+            <details>
+                <question> Who can participate? </question>
+                <p> This YSWS is open to anyone 18 and younger!</p>
+            </details>
+        </div>
+
+    </div>
+    
 </body>
 
 </html>
