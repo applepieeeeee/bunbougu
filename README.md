@@ -1,4 +1,5 @@
 # bunbougu: a ysws program for hack club
+bunbougu is a hack club ysws program where you ship a productivity/school related app and we ship you japanese stationery and other school supplies
 learn more on #bunbougu-ysws on slack!
 
 # FAQ
