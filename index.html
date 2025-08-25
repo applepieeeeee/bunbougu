@@ -76,7 +76,18 @@
                 max-width: 1000px; 
             }
 
-            .submit-button{
+            .program-status{
+                font-family: var(--font2);
+                color: var(--text-color);
+                font-size: 1.5rem;
+
+                margin-top: 30px;
+                margin-bottom: 15px;
+
+                padding: 0 20px;
+            }
+
+            .submit-button, .rsvp-button{
                 display: inline-block;
                 background-color: var(--button-bg);
                 color: var(--text-color);
@@ -94,9 +105,14 @@
                 margin-top: 20px;
             }
 
-            .submit-button:hover{
+            .submit-button:hover, .rsvp-button:hover{
                 background-color: #7DAEBA;
                 transform: translateY(-2px);
+            }
+
+            .rsvp-button{
+                margin-top:0;
+                margin-bottom:20px;
             }
 
             .faq-section {
@@ -218,11 +234,22 @@
                     padding: 0 10px; 
                 }
 
+                .program-status{
+                    font-size: 1.1rem;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+
+                .submit-button, .rsvp-button{
+                    font-size: 1.3rem;
+                    padding: 12px 24px;
+                }
+
                 .faq-section h2{
                     font-size: 2.5rem;
                 }
 
-                .faq-item summar{
+                .faq-item summary{
                     font-size: 1.2rem;
                 }
                 
@@ -246,7 +273,11 @@
     <div class="content-wrapper">
         <h1>bunbougu</h1>
         <p>a hack club ysws program where you ship a productivity/school related app and we ship you japanese stationery and other school supplies</p>
-        <a href="https://forms.fillout.com/t/qs71sxjUtAus" target="_blank" rel="noopener noreferrer" class="submit-button">Submit your Project here!</a>
+        
+        <p class = "program-status"> This YSWS hasn't started yet! RSVP to get notified or join #bunbougu-ysws on Slack!</p>
+        <a href = "https://forms.fillout.com/t/oPZmqpbsyRus" class = "rsvp-button">RSVP HERE</a>
+        <a href="https://forms.fillout.com/t/qs71sxjUtAus" target="_blank" rel="noopener noreferrer" class="submit-button">Submit your Project here! [not open yet]</a>
+   
     </div>
     
     <div class = "faq-section">
