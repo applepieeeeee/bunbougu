@@ -18,8 +18,8 @@
 
                 --bg-color: #FDF6ED;
                 --text-color: #2E3A59; 
-                --button-bg: #8BBCCC;
-                --faq-item-bg: #D9EDF7;
+                --button-bg: #9dcada;
+                --faq-item-bg: #b2c7d1;
             }
 
             body {
@@ -118,14 +118,17 @@
 
             .faq-item{
                 background-color: var(--faq-item-bg);
-                border: 1px solid var(--text-color);
                 border-radius: 10px;
 
                 text-align: left;
                 margin-bottom: 15px;
                 
                 padding: 15px 20px;
-            }  
+            } 
+
+            .faq-item:hover{
+                transform: translateY(-3px);
+            }
 
             .faq-item summary{
                 font-family: var(--font2);
