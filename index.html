@@ -15,8 +15,11 @@
             :root{
                 --font1: 'Shizuru', cursive;
                 --font2: 'Gaegu', cursive;
-                --bg-color: #f4d8d2;
-                --text-color: #041749;   
+
+                --bg-color: #FDF6ED;
+                --text-color: #2E3A59; 
+                --button-bg: #8BBCCC;
+                --faq-item-bg: #D9EDF7;
             }
 
             body {
@@ -102,6 +105,7 @@
                 
                 margin-top: 30px;
                 padding: 0 20px;
+                text-align: center;
             }
 
             .faq section h2{
@@ -113,8 +117,7 @@
             }
 
             .faq-item{
-                background-color: #d5b896;
-                border: 1px solid #00284d;
+                background-color: #d6b68f;
                 border-radius: 10px;
 
                 text-align: left;
@@ -123,7 +126,7 @@
                 padding: 15px 20px;
             }  
 
-            .faq-item question{
+            .faq-item summary{
                 font-family: var(--font2);
                 font-size: 1.4rem;
                 font-weight: bold;
@@ -138,7 +141,7 @@
                 padding-right: 30px;
             }
 
-            .faq-item question::after{
+            .faq-item summary::after{
                 content: '▼';
                 position: absolute;
                 right: 0;
@@ -147,7 +150,7 @@
                 transition: transform 0.2s ease;
             }
 
-            .faq-item details[open] question::after{
+            .faq-item details[open] summary::after{
                 transform: translateY(-50%) rotate(180deg);
             }
 
@@ -193,7 +196,7 @@
 
         <div class = "faq-item">
             <details>
-                <question> Who can participate? </question>
+                <summary> Who can participate? </summary>
                 <p> This YSWS is open to anyone 18 and younger!</p>
             </details>
         </div>
