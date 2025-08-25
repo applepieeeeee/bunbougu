@@ -26,6 +26,7 @@
                 padding: 0;
 
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 position: relative;
@@ -114,6 +115,10 @@
             .faq-item{
                 background-color: #d5b896;
                 border: 1px solid #00284d;
+                border-radius: 10px;
+
+                text-align: left;
+                margin-bottom: 15px;
                 
                 padding: 15px 20px;
             }  
@@ -130,14 +135,19 @@
                 outline: none;
 
                 cursor: pointer;
+                padding-right: 30px;
             }
 
             .faq-item question::after{
                 content: '▼';
                 position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: transform 0.2s ease;
             }
 
-            .faq-item[open] question::after{
+            .faq-item details[open] question::after{
                 transform: translateY(-50%) rotate(180deg);
             }
 
@@ -146,6 +156,8 @@
                 font-size: 1rem;
                 color: var(--text-color);
 
+                line-height: 1.6;
+                margin-top: 15px;
                 padding: 0;
                 max-width: none;
             }
