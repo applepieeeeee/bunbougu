@@ -8,15 +8,13 @@
         <link rel = "preconnect" href = "https://fonts.googleapis.com">
         <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
         <link href = "https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel = "stylesheet">
-        <link href = "https://fonts.googleapis.com/css2?family=Borel&display=swap" rel = "stylesheet">
         <link href = "https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel = "stylesheet">
 
         <!-- css -->
         <style>
             :root{
                 --font1: 'Shizuru', cursive;
-                --font2: 'Borel', serif;
-                --font3: 'Gaegu', cursive;
+                --font2: 'Gaegu', cursive;
 
                 --bg-color: #f7e5e5;
                 --secondary-color: #c4907d;
@@ -27,40 +25,22 @@
                 background-color: var(--bg-color);
                 min-height: 100vh;
                 margin: 0;
+                padding: 0;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 position: relative;
-            }
-
-            body::before{
-                content:'';
-                position: absolute;
-
-                top:0;
-                left:0;
-                width:100%;
-                height:100%;
-
-                background-image: url('assets/notebook.png');
-                background-size: contain;
-                background-position: center center;
-                background-repeat: no-repeat;
-
-                transform: rotateZ(-7deg) translateX(200px) translateY(30px);
-                transform-origin: center center;
-                z-index: -1;
             }
 
             .content-wrapper {
                 position: absolute;
-                top: 50px;
-                left: 250px;
 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
-                transform: rotateZ(-7deg);
-                transform-origin: center center;
                 padding: 12px;
                 box-sizing: border-box;
                 max-width: 520px;
@@ -74,7 +54,6 @@
                 line-height: 1;
 
                 margin-bottom: 10px;
-                transform: rotateZ(-7deg);
             }
 
             p{
@@ -86,7 +65,6 @@
                 text-align: center;
                 max-width: 520px;
                 padding: 0 20px;
-                transform: rotateZ(-7deg);
             }
 
         </style>
@@ -96,7 +74,7 @@
     <!-- html -->
     <body>
         <h1> bunbougu </h1>
-        <p> a hack club ysws program where you ship a productivity/school related app and we ship you japanese stationery and other school supplies !</p>
+        <p> a hack club ysws program where you ship a productivity/school related app and we ship you japanese stationery and other school supplies</p>
     </body>
     
 </html>
