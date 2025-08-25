@@ -2,6 +2,14 @@
 bunbougu is a hack club ysws program where you ship a productivity/school related app and we ship you japanese stationery and other school supplies
 learn more on #bunbougu-ysws on slack!
 
+# Important Links !!
+Slack: https://app.slack.com/client/T0266FRGM/C09AT8ZHYDV
+Repository: https://github.com/applepieeeeee/bunbougu
+Website: https://applepieeeeee.github.io/bunbougu/
+RSVP: https://forms.fillout.com/t/oPZmqpbsyRus
+Project Submission: https://forms.fillout.com/t/qs71sxjUtAus
+
+
 # FAQ
 ## Who can participate?
 This YSWS is open to anyone 18 and younger! 
