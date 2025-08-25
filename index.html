@@ -1,102 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-        <title> bunbougu </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bunbougu</title>
 
-        <link rel = "preconnect" href = "https://fonts.googleapis.com">
-        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-        <link href = "https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel = "stylesheet">
-        <link href = "https://fonts.googleapis.com/css2?family=Borel&display=swap" rel = "stylesheet">
-        <link href = "https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel = "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
 
-        <!-- css -->
-        <style>
-            :root{
-                --font1: 'Shizuru', cursive;
-                --font2: 'Borel', serif;
-                --font3: 'Gaegu', cursive;
+    <style>
+        :root {
+            --font1: 'Shizuru', cursive; 
+            --font2: 'Gaegu', cursive;
 
-                --bg-color: #f7e5e5;
-                --secondary-color: #c4907d;
-                --text-color: #475134;
-            }
+            --bg-color: #e2c1b9;
+            --text-color: #02123b;   
+        }
 
-            body {
-                background-color: var(--bg-color);
-                min-height: 100vh;
-                margin: 0;
-                position: relative;
-            }
+        body {
+            background-color: var(--bg-color);
+            min-height: 100vh; 
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            overflow: hidden;
+            position: relative;
+        }
 
-            body::before{
-                content:'';
-                position: absolute;
+        .content-wrapper {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 20px; 
+            max-width: 900px; 
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
 
-                top:0;
-                left:0;
-                width:100%;
-                height:100%;
+        h1 {
+            font-family: var(--font1);
+            color: var(--text-color);
+            font-size: 122px; 
+            letter-spacing: 0.07em;
+            line-height: 1;
+            margin: 0 0 10px 0; 
+            padding: 0;
+        }
 
-                background-image: url('assets/notebook.png');
-                background-size: contain;
-                background-position: center center;
-                background-repeat: no-repeat;
+        p {
+            font-family: var(--font2); 
+            color: var(--text-color);
+            font-size: 1.8rem; 
+            line-height: 1.2; 
+            margin-top: 2rem; 
+            padding: 0 20px;
+            max-width: 1000px; 
+        }
 
-                transform: rotateZ(-7deg) translateX(200px) translateY(30px);
-                transform-origin: center center;
-                z-index: -1;
-            }
+        .submit-button{
+            display: inline-block;
+            background-color: #a7b28d;
+            color: var(--text-color);
 
+            font-family: var(--font2);
+            font-size: 1.7rem;
+            padding: 15px 30px;
+            border-radius: 15px;
+
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+
+            margin-top: 20px;
+        }
+
+        .submit-button:hover{
+            background-color: #92a07a;
+        }
+
+        @media (max-width: 768px) {
             .content-wrapper {
-                position: absolute;
-                top: 50px;
-                left: 250px;
-
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                transform: rotateZ(-7deg);
-                transform-origin: center center;
-                padding: 12px;
-                box-sizing: border-box;
-                max-width: 520px;
+                max-width: 90%;
+                padding: 15px;
             }
 
             h1 {
-                font-family: var(--font1);
-                color: var(--text-color);
-                font-size: 122px;
-                letter-spacing: 0.07em;
-                line-height: 1;
-
-                margin-bottom: 10px;
-                transform: rotateZ(-7deg);
+                font-size: 70px; 
+                margin-bottom: 5px;
             }
 
-            p{
-                font-family: var(--font3);
-                color: var(--text-color);
-                font-size: 18px; 
-                margin-top: 120px;
-                
-                text-align: center;
-                max-width: 520px;
-                padding: 0 20px;
-                transform: rotateZ(-7deg);
+            p {
+                font-size: 1.2rem;
+                padding: 0 10px; 
             }
-
-        </style>
-
-    </head> 
-
-    <!-- html -->
-    <body>
-        <h1> bunbougu </h1>
-        <p> a hack club ysws program where you ship a productivity/school related app and we ship you japanese stationery and other school supplies !</p>
-    </body>
-    
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <h1>bunbougu</h1>
+        <p>a hack club ysws program where you ship a productivity/school related app and we ship you japanese stationery and other school supplies</p>
+        <a href="https://forms.fillout.com/t/qs71sxjUtAus" target="_blank" rel="noopener noreferrer" class="submit-button">Submit your Project here!</a>
+    </div>
+</body>
 </html>
