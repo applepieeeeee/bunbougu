@@ -27,7 +27,7 @@ You can submit 2 projects maximum, but they need to be significantly different (
 You can spend the grant as select Japanese stationery stores like Kokuyo, Muji, bungu, Japan Stationery, and Tokyo Pen Shop. Exceptions can be made if none of these stores ship to your country.
 
 ## When does this YSWS end?
-TBD!
+End of September, 2025!
 
 ## What kinds of projects can I submit to bunbougu?
 Any kind of productivity app or an app that will help you with school! However, no Todo Lists are allowed. Be creative!
